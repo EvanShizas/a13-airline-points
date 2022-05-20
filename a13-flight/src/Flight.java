@@ -860,14 +860,14 @@ public class Flight extends JFrame {
  * [Error Code Info]
  * 	0 -> no error
  * 	1 -> non-real percentage value(s)
- *  2 -> repeat loyalty ID
+ * 	2 -> repeat loyalty ID
  * 	3 -> digits in lastNameIn
  * 	4 -> digits in firstNameIn
  * 	5 -> no first name in field
  * 	6 -> parsing of non-double characters
  * 	7 -> invalid String inputs
  * 	8 -> no matching loyalty ID
- *  9 -> decimal values present in points entry
+ * 	9 -> decimal values present in points entry
  * 
  * [Array Design]
  *  By default is initialized with 1000x8 values of "*".
