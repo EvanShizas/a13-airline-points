@@ -71,7 +71,7 @@ public class Flight extends JFrame {
 	public Flight() { // GUI Constructor
 		setBackground(Color.WHITE);
 		setResizable(false);
-		setTitle("A11 - Student Grades");
+		setTitle("A13 - Flight");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 500, 687);
 		contentPane = new JPanel();
@@ -125,9 +125,9 @@ public class Flight extends JFrame {
 
 		week1In = new JTextField();
 		week1In.setHorizontalAlignment(SwingConstants.RIGHT);
+		week1In.setColumns(10);
 		week1In.setBounds(68, 119, 65, 22);
 		contentPane.add(week1In);
-		week1In.setColumns(10);
 
 		week2In = new JTextField();
 		week2In.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -785,7 +785,7 @@ public class Flight extends JFrame {
 		}
 		
 		else if (errorCode == 2) {
-			dialogBox.setText("ERROR: REPEAT LOYALTY IDs! TRY AGAIN!");
+			dialogBox.setText("ERROR: REPEAT CUSTOMER IDs! TRY AGAIN!");
 		}
 
 		else if (errorCode == 3) {
@@ -809,7 +809,7 @@ public class Flight extends JFrame {
 		}
 
 		else if (errorCode == 8) {
-			dialogBox.setText("ERROR: NO MATCHING LOYALTY ID! TRY AGAIN!");
+			dialogBox.setText("ERROR: NO MATCHING CUSTOMER ID! TRY AGAIN!");
 		}
 
 		else if (errorCode == 9) {
