@@ -53,7 +53,7 @@ public class Flight extends JFrame {
 	// customerCount acts as an array pointer and counter.
 	int customerCount = 0, errorCode = 0, pointsEntries = 0, customerPointsEntries = 0, customerPosition = 0, customerPoints = 0, totalPoints = 0;
 
-	boolean removePress = false, updatePress = false, sortPress = false, allowDebug = false;
+	boolean removePress = false, updatePress = false, sortPress = false;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -828,29 +828,6 @@ public class Flight extends JFrame {
 			week2In.setEnabled(false);
 			week3In.setEnabled(false);
 			week4In.setEnabled(false);
-		}
-	}
-
-	public void debugConsole() { // Runs when allowDebug -> true
-		if (allowDebug) {
-			System.out.println("customerCount -> " + customerCount);
-			System.out.println("errorCode -> " + errorCode);
-			System.out.println("customerPointsEntries -> " + customerPointsEntries);
-			System.out.println("customerPoints -> " + customerPoints);
-			System.out.println("pointsEntries -> " + pointsEntries);
-			System.out.println("totalPoints -> " + totalPoints);
-			System.out.println("studentIDNumber -> " + loyaltyIDNumber.getValue().toString());
-			System.out.println("sortPress -> " + sortPress);
-			System.out.println("customerPosition -> " + customerPosition);
-
-			for (int i = 0; i < customerNamesPoints.length; i++) {
-				for (int j = 0; j < customerNamesPoints[i].length; j++) {
-					System.out.print(customerNamesPoints[i][j] + " // ");
-				}
-				System.out.println();
-			}
-
-			System.out.println("------------------------------------------------------------------------------------------");
 		}
 	}
 }
