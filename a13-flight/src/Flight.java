@@ -53,7 +53,7 @@ public class Flight extends JFrame {
 	// customerCount acts as an array pointer and counter.
 	int customerCount = 0, errorCode = 0, pointsEntries = 0, customerPointsEntries = 0, customerPosition = 0, customerPoints = 0, totalPoints = 0;
 
-	boolean removePress = false, updatePress = false, sortPress = false;
+	boolean removePress = false, updatePress = false, sortPress = false, allowDebug = false;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -271,8 +271,6 @@ public class Flight extends JFrame {
 
 			arrayInitialize();
 		}
-
-		debugConsole();
 	}
 
 	private void addActionPerformed(java.awt.event.ActionEvent evt) {
@@ -307,8 +305,6 @@ public class Flight extends JFrame {
 			
 			loyaltyIDNumber.setModel(new SpinnerNumberModel(0, 0, MAX_ID_RANGE, 1));
 		}
-
-		debugConsole();
 	}
 
 	private void removeActionPerformed(java.awt.event.ActionEvent evt) {
@@ -417,8 +413,6 @@ public class Flight extends JFrame {
 			totalPointsCalculation();
 		
 		loyaltyIDNumber.setModel(new SpinnerNumberModel(0, 0, MAX_ID_RANGE, 1));
-
-		debugConsole();
 	}
 
 	private void updateActionPerformed(java.awt.event.ActionEvent evt) {
@@ -462,8 +456,6 @@ public class Flight extends JFrame {
 		updatePress = false;
 		
 		loyaltyIDNumber.setModel(new SpinnerNumberModel(0, 0, MAX_ID_RANGE, 1));
-
-		debugConsole();
 	}
 
 	private void sortActionPerformed(java.awt.event.ActionEvent evt) {
@@ -507,8 +499,6 @@ public class Flight extends JFrame {
 		loyaltyIDNumber.setModel(new SpinnerNumberModel(0, 0, MAX_ID_RANGE, 1));
 
 		arrayWriteOut();
-
-		debugConsole();
 	}
 
 	public void customerPointsCalculation() {
